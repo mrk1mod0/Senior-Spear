@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+
+.align_1 {
+	background-color: #E9E8C7;
+}
+
+.images {
+	display: inline-block;
+	height: 350px;
+	width: 500px;
+}
+
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
     $("#hide").click(function(){
-        $("p").hide();
+        $("img").slideUp("slow");
     });
     $("#show").click(function(){
-        $("p").show();
+        $("img").slideDown("slow");
     });
 });
 </script>
 </head>
 <body>
 
-<div>
-<img src="dragon_image_2.jpg"><br>
+<div class="align_1">
+<img src="dragon_image_2.jpg" class="images"><br>
 <p>I am so scared of this dragon that I need to hide him!</p><br>
 <button id="hide">Hide</button>
 <button id="show">Show</button>
