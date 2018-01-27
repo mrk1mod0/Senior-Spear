@@ -13,9 +13,11 @@
 	
 .alignleft {
 	float: left;
+	padding-left:10px;
 }
 .alignright {
 	float: left;
+	padding-left:10px;
 	
 }
 
@@ -39,15 +41,7 @@ $(document).ready(function(){
         $("img").slideDown("slow");
     });
 });
-	
-$(document).ready(function(){
-    $("#off").click(function(){
-        $("img").slideUp("slow");
-    });
-    $("#on").click(function(){
-        $("img").slideDown("slow");
-    });
-});
+
 
 </script>
 </head>
@@ -67,27 +61,8 @@ $(document).ready(function(){
 	
 <!--<img src="dragon_image_2.jpg" class="images">-->
 <img src="dragon_image_1.jpg" class="images">
-<p>I am so scared of this dragon that I need to hide him!</p><br>
-<button id="sneaky">Hide the dragon</button>
-<button id="snappy">Show the dragon</button>
 
 </div>
-
-	<br>
-	<br>
-	<br>
-	
-	
-<div>
-	
-<!--<img src="dragon_image_2.jpg" class="images">-->
-<img src="dragon_image_1.jpg" class="images">
-<p>I am so scared of this dragon that I need to hide him!</p><br>
-<button id="off">Hide the dragon</button>
-<button id="on">Show the dragon</button>
-
-</div>
-
 
 </body>
 </html>
